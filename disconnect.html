@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<title>Disconnected - Evestar Accounting Bridge</title>
+<style>
+body {
+  margin: 0;
+  background: #f7f6f3;
+  color: #1d1d1b;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+h1 {
+  font-size: 1.7rem;
+  margin: 0 0 .25rem;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 .5rem;
+  font-weight: normal;
+  border-bottom: 1px solid #d9d6cd;
+  padding-bottom: .25rem;
+}
+h3 {
+  font-size: 1.02rem;
+  margin: 1.4rem 0 .4rem;
+}
+.tagline {
+  color: #5c5a54;
+  margin: 0 0 2rem;
+  font-size: 1rem;
+}
+.dates {
+  color: #5c5a54;
+  font-size: .95rem;
+  margin: 0 0 2rem;
+}
+p {
+  margin: .6rem 0;
+}
+ol, ul {
+  margin: .6rem 0;
+  padding-left: 1.4rem;
+}
+li {
+  margin: .25rem 0;
+}
+code {
+  font-family: Consolas, Menlo, monospace;
+  font-size: .92em;
+  background: #eeece6;
+  padding: .05em .3em;
+  border-radius: 3px;
+  word-break: break-word;
+}
+a {
+  color: #1a4c7c;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: .95rem;
+}
+th, td {
+  border: 1px solid #d9d6cd;
+  padding: .4rem .6rem;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: #eeece6;
+  font-weight: normal;
+}
+.note {
+  background: #fff8e1;
+  border: 1px solid #e6d9a8;
+  padding: .75rem 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid #d9d6cd;
+  padding-top: 1rem;
+  font-size: .9rem;
+  color: #5c5a54;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>The application has been disconnected</h1>
+<p class="tagline">Evestar Accounting Bridge</p>
+
+<p>You have disconnected Evestar Accounting Bridge from a QuickBooks Online company. From
+this moment the application can no longer access that company: its next attempt
+to renew its access will fail, and a new authorization is required to connect
+again.</p>
+
+<h2>To complete the removal on the computer</h2>
+<ul>
+  <li>The operator uses the revoke function of the tool for that company. It
+      deletes the local token file (<code>secure\tokens.production.json</code>, inside the local
+      profile folder of that company).</li>
+  <li>Once the application is disconnected, a token file left on the computer no
+      longer grants access, but deleting it is the clean way to finish.</li>
+</ul>
+
+<h2>What disconnecting does not do</h2>
+<ul>
+  <li>It does <strong>not</strong> delete the accounting data inside QuickBooks
+      Online. That data belongs to the QuickBooks company and remains there.</li>
+  <li>It does <strong>not</strong> delete the local log files
+      (<code>logs\qbo_audit.jsonl</code> and <code>logs\qbo_requests.jsonl</code>)
+      kept on the computer where the tool ran. They remain until they are removed
+      as described in the <a href="privacy.html">Privacy Policy</a>.</li>
+</ul>
+
+<h2>To connect again</h2>
+<p>A new connection is started from the tool on the authorized computer, as
+explained on the <a href="connect.html">connection page</a>.</p>
+
+<h2>Deletion requests</h2>
+<p>To request deletion of locally stored records, write to
+<a href="mailto:eduard@evestar.com">eduard@evestar.com</a> with the subject
+line "Privacy request - Evestar Accounting Bridge".</p>
+
+<footer>
+<p>Evestar Group LLC &middot; <a href="index.html">Home</a> &middot;
+<a href="eula.html">EULA</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
